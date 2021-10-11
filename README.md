@@ -7,5 +7,7 @@ Contributors:<br/>
     Rakesh Ganeshula<br/>
     Anirudh Jakhotia<br/>
     Harish1925<br/>
-    Pendyala Bharghav Sai<br/> 
-    Satyam
+    Pendyala Bharghav Sai<br/>
+    Atharva<br/>
+    Shrianshi Maurya<br/>
+    Tushar Verma<br/>
