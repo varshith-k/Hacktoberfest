@@ -1,20 +1,30 @@
+def binary_search(list1, n):  
+    low = 0  
+    high = len(list1) - 1  
+    mid = 0  
+  
+    while low <= high:  
 
-number_list = [87, 576, 88, 800, 698, 645, 78, 9, 57, 7]
+        mid = (high + low) // 2  
+ 
+        if list1[mid] < n:  
+            low = mid + 1  
 
-number_list.sort()
+        elif list1[mid] > n:  
+            high = mid - 1  
 
+        else:  
+            return mid  
 
-def binary_search(num_list: list, number, start, end):
-    if start > end:
-        return -1
-
-    mid = (start + end) // 2
-    if number == num_list[mid]:
-        return mid
-    elif number < num_list[mid]:
-        return binary_search(num_list, number, start=start, end=mid - 1)
-    else:
-        return binary_search(num_list, number, start=mid + 1, end=end)
-
-
-print(binary_search(number_list, 698, 0, len(number_list) - 1))
+    return -1  
+  
+  
+list1 = [12, 24, 32, 39, 45, 50, 54]  
+n = 45  
+  
+result = binary_search(list1, n)  
+  
+if result != -1:  
+    print("Element is present at index", str(result))  
+else:  
+    print("Element is not present in list1")  
